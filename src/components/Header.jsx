@@ -1,6 +1,6 @@
 import '../styles/header.scss'
-import {useEffect} from 'react'
-import {auth} from './firebase.js'
+import { useEffect } from 'react'
+import { auth } from './firebase.js'
 
 export function Header(props) {
 

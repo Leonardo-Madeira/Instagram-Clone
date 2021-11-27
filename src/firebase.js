@@ -1,6 +1,9 @@
-import firebase from 'firebase';
+import firebase from 'firebase/compat/app';
 
-const firebaseConfig = firebase.initializeApp({
+import 'firebase/compat/auth';
+import 'firebase/compat/database'
+
+const firebaseConfig ={
     apiKey: process.env.REACT_APP_API_KEY,
     authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     projectId: process.env.REACT_APP_PROJECT_ID,
@@ -8,11 +11,11 @@ const firebaseConfig = firebase.initializeApp({
     messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
     appId: process.env.REACT_APP_APP_ID,
     measurementId: process.env.REACT_APP_MEASUREMENT_ID
-  });
+  };
 
   firebase.initializeApp(firebaseConfig);
 
-  const db = firebase.firebase(); // database em tempo real
+  const db = firebase.firestore(); // database em tempo real
   const auth = firebase.auth(); //Login
   const storage = firebase.storage(); //Publicação
   const functions = firebase.functions();
