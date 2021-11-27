@@ -1,32 +1,13 @@
-import {db} from './firebase.js';
-import {useEffect , useState} from 'react'
-
-import './App.scss'
+import './styles/global.scss'
+import { Header } from './components/Header';
+import { useState, useEffect } from 'react';
+//import {db} from './firebase.js'
 
 export function App() {
-
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    console.log(db);
-  }, [])
+  const [user, setUser] = useState('')
 
   return(
-    <div className="app">
-      <div className="header">
-        <div className="headerLogo">
-          <a href=""><img src="" alt="" /></a>
-        </div>
-
-        <div className="headerloginForm">
-          <form action="">
-            <input type="text" placeholder="Login" />
-            <input type="password" placeholder="Senha" name="" id="" />
-            <input type="submit" name="acao"  value="Logar!" />
-          </form>
-        </div>
-      </div>
-    </div>
+      <Header setUser={setUser} user={user} />
   );
-};
+}
 
