@@ -1,0 +1,142 @@
+.header{
+    padding: 10px 0;    
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgb(230, 230, 230);
+
+    .modalCriarConta{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        .formCriarConta{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            padding: 20px;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+
+            .closeModalCriar{
+                position: relative;
+                margin: -30px 0px 30px -30px;
+                cursor: pointer;
+                width: 30px;
+                text-align: center;
+                height: 30px;
+                color: white;
+                line-height: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: #0095f6;
+            }
+
+            h2{
+                margin-top: -20px;
+                color: #0095f6;
+                
+                padding-bottom: 20px;
+            }
+            background-color: #edf1f3;
+            form{
+                .createEmail, .createName, .createPassword{
+                    width: 100%;
+                    max-width: 700px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    padding: 30px;
+                    
+                    &:focus{
+                        background-color: #0094f613;
+                    }
+                    &:link{
+                        border: 0;
+                    }
+                }
+                button{
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 700px;
+                    background-color: #0095f6;
+                    cursor: pointer;
+                    border: 0 solid;
+                    padding: 20px;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    .center{
+        padding: 0 2%;
+        display: flex;
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+            //.headerLogo{ //LOGO
+               
+            //}
+
+            .Logadoinf{
+                text-align: right;
+                width: 50%;
+
+                a{
+                   margin: 0 10px;
+                   text-decoration: none;
+                   padding: 10px;
+                   color: white;
+                   background-color: #0095f6;
+                   cursor: pointer;
+                }
+            }
+
+            .headerloginForm{ //FORMULÁRIO
+                form{
+                    
+                    .email{
+                        width: 230px;
+                        margin-right: 5px;
+                        height: 20px;
+                        border: 1px solid #ccc;
+                        padding-left: 10px;
+                    }
+                    .senha{
+                        width: 130px;
+                        margin-right: 5px;
+                        height: 20px;
+                        border: 1px solid #ccc;
+                        padding-left: 10px;
+                    }
+                    button{
+                        background-color: #0095f6;
+                        color: white;
+                        border: 0;
+                        height: 20px;
+                        padding: 0px 10px;
+                        cursor: pointer;
+                        font-size: 14px; 
+                    }
+                    .createCount{
+                        margin: 0 10px;
+                        font-size: 13px;
+                    }
+                }
+                    
+            }
+    }
+}
